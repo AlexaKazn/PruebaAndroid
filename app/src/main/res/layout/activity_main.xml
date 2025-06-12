@@ -167,8 +167,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/pasar_info_button"
-            app:layout_row="8"
-            app:layout_columnSpan="2" />
+            app:layout_columnSpan="2"
+            app:layout_row="8" />
         <Button
             android:id="@+id/buttonMostrar"
             android:layout_width="match_parent"
