@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        app:columnCount="2"
+        app:rowCount="10">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_columnSpan="2"
+            app:layout_row="0"
+            app:title="Tercera Pantalla"
+            app:titleTextColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_label"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/nombre_text"
+            app:layout_column="1"
+            app:layout_row="1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewApellido"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="@string/apellido_label"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/apellido_text"
+            app:layout_column="1"
+            app:layout_row="2"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView_Dividendo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dividendo_label"
+            app:layout_column="0"
+            app:layout_row="3"/>
+
+        <EditText
+            android:id="@+id/editText_Dividendo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/dividendo_text"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/textView_Divisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divisor_label"
+            app:layout_column="0"
+            app:layout_row="4"/>
+
+        <EditText
+            android:id="@+id/editText_Divisor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/dividendo_text"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/textView_Numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Numero_label"
+            app:layout_column="0"
+            app:layout_row="7"/>
+
+        <EditText
+            android:id="@+id/editText_Numero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/Numero_text"
+            app:layout_column="1"
+            app:layout_row="7" />
+
+        <Button
+            android:id="@+id/buttonCerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cerrar_info_button"
+            app:layout_row="9"
+            app:layout_columnSpan="2" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

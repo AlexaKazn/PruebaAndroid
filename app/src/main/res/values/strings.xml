@@ -1,3 +1,31 @@
 <resources>
-    <string name="app_name">prueba02_01_paola_nunez</string>
+    <string name="app_name">Paso de parametros</string>
+
+    <string name="nombre_label">Nombre:</string>
+    <string name="nombre_text">""</string>
+
+    <string name="apellido_label">Apellido:</string>
+    <string name="apellido_text">""</string>
+
+    <string name="dividendo_label">Dividendo:</string>
+    <string name="dividendo_text">""</string>
+    <string name="divisor_label">Divisor:</string>
+    <string name="divisor_text">""</string>
+    <string name="ParteEntera_label">Parte Entera:</string>
+    <string name="ParteEntera_text">""</string>
+    <string name="Residuo_label">Residuo:</string>
+    <string name="Residuo_text">""</string>
+    <string name="NumInver_label">Nùmero Invertido:</string>
+    <string name="NumInver_text">""</string>
+
+    <string name="Numero_label">Nùmero:</string>
+    <string name="Numero_text">""</string>
+
+
+    <string name="pasar_info_button">Siguiente</string>
+    <string name="mostrar_info_button">Mostrar Resultados</string>
+    <string name="cerrar_info_button">Cerrar </string>
+
+
+
 </resources>
