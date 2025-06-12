@@ -25,11 +25,9 @@ public class ThirdActivity extends AppCompatActivity {
         editTextNumero = findViewById(R.id.editText_Numero);
         buttonCerrar = findViewById(R.id.buttonCerrar);
 
-        // Bloquear nombre y apellido
         editTextNombre.setEnabled(false);
         editTextApellido.setEnabled(false);
 
-        // Obtener datos desde SecondActivity
         Intent intent = getIntent();
         String nombre = intent.getStringExtra("nombre");
         String apellido = intent.getStringExtra("apellido");
@@ -38,7 +36,6 @@ public class ThirdActivity extends AppCompatActivity {
         editTextApellido.setText(apellido);
 
         buttonCerrar.setOnClickListener(v -> {
-            // Validaciones básicas
             String sDividendo = editTextDividendo.getText().toString().trim();
             String sDivisor = editTextDivisor.getText().toString().trim();
             String sNumero = editTextNumero.getText().toString().trim();

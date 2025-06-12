@@ -50,43 +50,43 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            int cociente = 0;
-            int residuoActual = dividendo;
+            int cocientePN = 0;
+            int residuoActualPN = dividendo;
 
             do {
-                int contador = 0;
-                int simulacion = 0;
+                int contadorPN = 0;
+                int simulacionPN = 0;
                 do {
-                    simulacion = simulacion + 1;
-                    contador++;
-                } while (contador < divisor);
+                    simulacionPN = simulacionPN + 1;
+                    contadorPN++;
+                } while (contadorPN < divisor);
 
-                int comparador = 0;
-                int simulador = 0;
+                int comparadorPN = 0;
+                int simuladorPN = 0;
                 do {
-                    simulador = simulador + 1;
-                    comparador++;
-                } while (simulador < residuoActual);
+                    simuladorPN = simuladorPN + 1;
+                    comparadorPN++;
+                } while (simuladorPN < residuoActualPN);
 
-                if (comparador >= divisor) {
-                    residuoActual = residuoActual - divisor;
-                    cociente++;
+                if (comparadorPN >= divisor) {
+                    residuoActualPN = residuoActualPN - divisor;
+                    cocientePN++;
                 } else {
                     break;
                 }
-            } while (residuoActual >= divisor);
+            } while (residuoActualPN >= divisor);
 
-            int invertido = 0;
-            int temp = numero;
+            int invertidoPN = 0;
+            int tempPN = numero;
             do {
-                int digito = temp % 10;
-                invertido = invertido * 10 + digito;
-                temp = temp / 10;
-            } while (temp != 0);
+                int digito = tempPN % 10;
+                invertidoPN = invertidoPN * 10 + digito;
+                tempPN = tempPN / 10;
+            } while (tempPN != 0);
 
-            editTextParteEntera.setText(String.valueOf(cociente));
-            editTextResiduo.setText(String.valueOf(residuoActual));
-            editTextNumInver.setText(String.valueOf(invertido));
+            editTextParteEntera.setText(String.valueOf(cocientePN));
+            editTextResiduo.setText(String.valueOf(residuoActualPN));
+            editTextNumInver.setText(String.valueOf(invertidoPN));
         });
 
         buttonPasar.setOnClickListener(v -> {
